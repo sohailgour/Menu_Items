@@ -20,6 +20,24 @@ h1{
     font-size: 1rem;
     color: #736d6d;
 }
+form{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 100px;
+
+}
+input{
+    font-size: 2rem;
+    padding: 5px;
+}
+i{
+    font-size: 2rem;
+    padding:8px;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+}
 
 .container{
     width: 95%;

@@ -122,7 +122,13 @@ function generateHTML(getarr){
        });
 }
 
-
+function color(){
+        const red = Math.floor(Math.random()*256)
+        const green = Math.floor(Math.random()*256)
+        const black = Math.floor(Math.random()*256)
+        const randomcolor = `rgb(${red},${green},${black})`
+        return randomcolor;
+    }
 
 const btnArray = Array.from(btn);
 
@@ -133,22 +139,25 @@ btnArray.map((item)=>{
             str="";
             generateHTML(arr);
             container[0].innerHTML = str;
-            document.body.style.backgroundColor = "lightgreen";
+            const changecolor = color();
+            console.log(changecolor)
+            document.body.style.backgroundColor = `${changecolor}`;
+             
         }
         else{
             const newarr = arr.filter((item)=>{
                 return item.category=== value;
              })
              str="";
+             const changecolor = color();
+            console.log(changecolor)
              generateHTML(newarr);
              container[0].innerHTML="";
              container[0].innerHTML = str;
-             document.body.style.backgroundColor = "yellow";
+             document.body.style.backgroundColor = `${changecolor}`;
         }
         
     })
 })
-
-
-
+ 
 //console.log(newarr)

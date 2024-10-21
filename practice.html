@@ -1,34 +1,242 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+         *{
             padding: 0;
             margin: 0;
         }
-        .practice{
+         /* .practice{
             text-align: center;
-            font-size: 2rem;
+            font-size: 1rem;
+        }
+        .btn-primary{
+            background-color: black;
+            color: antiquewhite;
         }
         .btn{
             padding: 20px 40px;
             border-radius: 20px;
             font-size: 1.2rem;
-        }
+        }  */
+           /* .container{
+            border:  2px solid red; 
+            width: 800px;
+        } */
+
+    
+         main{
+            height: 100vh;
+             border: 2px solid red; 
+             display: flex;  
+             justify-content: center;
+             align-items: center;
+             padding: 10px;
+         }  
+          .addtodo{
+            width: 800px;
+         /* border: 2px solid red;  */
+            margin-top: 30px;
+           
+          
+            color: #fff;
+
+         }
+         .addtodo li{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 10px;
+            align-items: center;
+            background-color: #333;
+         }
+         .inputtag{
+            width: 100%;
+         }
+         
+         input{
+            width: 650px;
+            height: 30px;
+         }
+         .btn{
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            margin-left: 10px;
+         }
+         button{
+            height: 30px;
+            width: 100px;
+            text-align: center;
+         }
+         
+
+
+         /* .grandparent{
+            border: 2px solid red;
+            padding: 60px;
+            background-color:#b1e4e0;
+            border-radius: 10px;
+         }
+         .parent{
+            border: 2px solid red;
+            padding: 60px; */
+           /* background-color: #145da0;
+         }
+         .child{
+            border: 2px solid red;
+            padding: 60px;
+            background-color: #0c4d48;
+         } */
+
+         /* .heading { 
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #333;
+
+          }
+         button{
+            margin:auto;
+            padding: 10px 80px;
+            font-size: 2rem;
+            background-color: antiquewhite;
+            border-radius: 20px;
+          }  */
+
+           
     </style>
 </head>
 <body>
-    <div class="practice">
+    <!-- <div class="practice">
         <h2 id="heading"> how are you <span style="display: none;">hello</span> </h2>
     <button class="btn">search</button>
     <li class="system"><a href="#home">home</a></li>
     <li class="system"><a href="">about</a></li>
     <li class="system"><a href="">pages</a></li>
-</div>
+</div> -->
+<!-- <div class="color">
+<button id="btn" style="padding: 20px 50px; display: block; margin: 20px auto;">hello brother</button>
+<button id="btn" style="padding: 20px 50px; display: block; margin: 20px auto;">hello brother</button>
+<button id="btn" style="padding: 20px 50px; display: block; margin: 20px auto;">hello brother</button>
+    </div> -->
+ <!-- <main>
+    <div class="container">
+        <h1 class="heading">Rgba =<span>(255,255,255)</span></h1><br>
+        <button> changecolor</button>
+     </div>
+    </main>  -->
+        <!-- <div class="grandparent">
+            grandparent
+            <div class="parent">
+                parent
+                <div class="child">
+                    child
+                </div>
+            </div>
+        </div>
+    </main> --> 
+    <!-- <a href="https://www.youtube.com/shorts/Myn-o5n1W7M">hello</a> -->
+      <!-- <main>
+        <div class="container">
+            <form action="" class="form-todo">
+           <input type="text" id="input" placeholder="add todo" required>
+            <input type="submit" value="add todo" class="btn">
+            </form>
+           <ul class="addtodo">
+            <li>
+             <span>todo 1</span>
+                <div class="button-primary">
+                    <button class="btn   done">done</button>
+                   <button class="btn  remove">remove</button>
+                </div>
+            </li>
+        </ul>
     
-    <script src="../practice.js"></script>
+        </div> -->
+    <!-- </main> -->
+    <!-- <script src="../practice.js"></script> -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Item Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #searchBar {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu li {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        #menu li:hover {
+            background-color: #f0f0f0;
+        }
+        #noResults {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Menu</h1>
+<input type="text" id="searchBar" placeholder="Search for menu items..." onkeyup="searchMenu()">
+
+<ul id="menu">
+    <li>Spaghetti Carbonara</li>
+    <li>Margherita Pizza</li>
+    <li>Caesar Salad</li>
+    <li>Beef Tacos</li>
+    <li>Grilled Salmon</li>
+    <li>Vegetable Stir Fry</li>
+    <li>Chocolate Cake</li>
+</ul>
+
+<div id="noResults">No menu items match your search.</div>
+
+<script>
+    function searchMenu() {
+        const input = document.getElementById('searchBar').value.toLowerCase();
+        const menuItems = document.querySelectorAll('#menu li');
+        let hasResults = false;
+
+        menuItems.forEach(item => {
+            const text = item.textContent.toLowerCase();
+            if (text.includes(input) && input) {
+                item.style.display = '';
+                hasResults = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        document.getElementById('noResults').style.display = hasResults ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
