@@ -161,3 +161,8 @@ btnArray.map((item)=>{
 })
  
 //console.log(newarr)
+
+import  {greet} from "./second.js";
+
+let x=greet();
+console.log(x);

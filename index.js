@@ -865,7 +865,7 @@
 //     return 0;
 
 // }
-//    const aaa = [2,3,4,6,9,6,10];
+   const aaa = [2,3,4,6,9,6,10];
 //  console.log(check(aaa,6));
 // console.log("hello my6y friends")
 
@@ -978,10 +978,10 @@
 
 
 
-// let newArr=arr.map((item,index)=>{
-//    console.log(item,index);
-//    return item*5;
-// })
+let newArr=arr.map((item,index)=>{
+   console.log(item,index);
+   return item*5;
+})
 
 // console.log(arr,newArr);
 
